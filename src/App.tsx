@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import TripPlanner from './components/TripPlanner';
@@ -7,7 +7,6 @@ import AIPlanner from './components/AIPlanner';
 import HotelBooking from './components/HotelBooking';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-import Footer from './components/Footer';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -29,8 +28,6 @@ function App() {
       {activeSection === 'destinations' && <FeaturedDestinations />}
       {activeSection === 'login' && <Login setActiveSection={setActiveSection} />}
       {activeSection === 'signup' && <SignUp setActiveSection={setActiveSection} />}
-      
-      <Footer />
     </div>
   );
 }

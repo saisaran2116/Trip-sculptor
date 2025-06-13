@@ -20,13 +20,10 @@ const Header: React.FC<HeaderProps> = ({ activeSection, setActiveSection }) => {
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-orange-100 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex items-center space-x-2">
-            <div className="bg-gradient-to-r from-orange-500 to-teal-600 p-2 rounded-lg">
-              <MapPin className="h-6 w-6 text-white" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-orange-600 to-teal-600 bg-clip-text text-transparent">
-              tripSculptor
-            </span>
+          <div className="flex items-center">
+            <h1 className="text-3xl font-['Playfair_Display'] text-slate-800 tracking-wide">
+              Trip Sculptor
+            </h1>
           </div>
 
           {/* Desktop Navigation */}
